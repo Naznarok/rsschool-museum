@@ -4,19 +4,380 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="section_wrapper">
+        <img src="./assets/img/Logo.svg" alt="Logo" />
+        <nav class="header_nav">
+          <ul>
+            <li><a href="#visiting">Visiting</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
-      <section class="welcome"></section>
-      <section class="visiting"></section>
-      <section class="explore"></section>
-      <section class="video"></section>
-      <section class="gallery"></section>
-      <section class="tickets"></section>
-      <section class="contacts"></section>
+      <section class="welcome">
+        <div class="section_wrapper">
+          <div class="welcome_text">
+            <h1>
+              Welcome<br />
+              to the Louvre
+            </h1>
+            <p>From the castle to the museum</p>
+            <button class="welcome_button">Discover the Louvre</button>
+          </div>
+          <div class="welcome_gallery">
+            <div class="gallery_pagination">
+              <div class="pagination_counter">
+                <span>01</span>
+                <span>|</span>
+                <span>05</span>
+              </div>
+              <ul class="pagination_items">
+                <li>
+                  <button class="pagination_item active"></button>
+                </li>
+                <li><button class="pagination_item"></button></li>
+                <li><button class="pagination_item"></button></li>
+                <li><button class="pagination_item"></button></li>
+                <li><button class="pagination_item"></button></li>
+              </ul>
+              <div class="pagination_buttons">
+                <button class="arrow left">
+                  <svg
+                    width="30"
+                    height="8"
+                    viewBox="0 0 30 8"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.72254 8C3.90173 6.31339 1.99422 5.08262 0 4.30769V3.69231C1.99422 2.89459 3.90173 1.66382 5.72254 0H7.23988C6.37283 1.4359 5.53468 2.52991 4.72543 3.28205H30V4.71795H4.72543C5.53468 5.47009 6.37283 6.5641 7.23988 8H5.72254Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+                <button class="arrow right">
+                  <svg
+                    width="30"
+                    height="8"
+                    viewBox="0 0 30 8"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.72254 8C3.90173 6.31339 1.99422 5.08262 0 4.30769V3.69231C1.99422 2.89459 3.90173 1.66382 5.72254 0H7.23988C6.37283 1.4359 5.53468 2.52991 4.72543 3.28205H30V4.71795H4.72543C5.53468 5.47009 6.37283 6.5641 7.23988 8H5.72254Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="visiting" class="visiting">
+        <div class="section_wrapper">
+          <h2>Virtual tour</h2>
+          <div class="visiting_wrapper">
+            <div class="visiting_item">
+              <img
+                src="./assets/img/tour/1.jpg"
+                alt=""
+                width="440"
+                height="285"
+              />
+              <ul class="item_text">
+                <h3>Royal Palace</h3>
+                <li class="underline"></li>
+                <li class="item_subtitle">360° Virtual Tour</li>
+                <li class="item_source">Google Street Panorama View</li>
+              </ul>
+            </div>
+
+            <div class="visiting_item">
+              <img
+                src="./assets/img/tour/2.jpg"
+                alt=""
+                width="440"
+                height="285"
+              />
+              <ul class="item_text">
+                <h3>Denon Wing</h3>
+                <li class="underline"></li>
+                <li class="item_subtitle">360° Virtual Tour</li>
+                <li class="item_source">Google Street Panorama View</li>
+              </ul>
+            </div>
+
+            <div class="visiting_item">
+              <img
+                src="./assets/img/tour/3.jpg"
+                alt=""
+                width="440"
+                height="285"
+              />
+              <ul class="item_text">
+                <h3>Colonnade Perrault</h3>
+                <li class="underline"></li>
+                <li class="item_subtitle">360° Virtual Tour</li>
+                <li class="item_source">Google Street Panorama View</li>
+              </ul>
+            </div>
+
+            <div class="visiting_item">
+              <img
+                src="./assets/img/tour/4.jpg"
+                alt=""
+                width="440"
+                height="285"
+              />
+              <ul class="item_text">
+                <h3>Greek Hall</h3>
+                <li class="underline"></li>
+                <li class="item_subtitle">360° Virtual Tour</li>
+                <li class="item_source">Google Street Panorama View</li>
+              </ul>
+            </div>
+
+            <div class="visiting_item">
+              <img
+                src="./assets/img/tour/5.jpg"
+                alt=""
+                width="440"
+                height="285"
+              />
+              <ul class="item_text">
+                <h3>Mona Lisa</h3>
+                <li class="underline"></li>
+                <li class="item_subtitle">360° Virtual Tour</li>
+                <li class="item_source">Google Street Panorama View</li>
+              </ul>
+            </div>
+
+            <div class="visiting_item">
+              <img
+                src="./assets/img/tour/6.jpg"
+                alt=""
+                width="440"
+                height="285"
+              />
+              <ul class="item_text">
+                <h3>Night Palace</h3>
+                <li class="underline"></li>
+                <li class="item_subtitle">360° Virtual Tour</li>
+                <li class="item_source">Google Street Panorama View</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="explore" class="explore">
+        <div class="section_wrapper">
+          <div class="explore_text">
+            <h2>Picture explore</h2>
+            <p>
+              Las Meninas is a 1656 painting by Diego Velázquez, the leading
+              artist of the Spanish Golden Age.
+            </p>
+            <p>
+              It was cleaned in 1984 to remove a
+              <span class="highlight">"yellow veil"</span> of dust that had
+              gathered since the previous restoration in the 19th century.
+            </p>
+            <p>
+              The cleaning provoked furious protests, not because the picture
+              had been damaged in any way, but because it looked different.
+            </p>
+          </div>
+          <div class="explore_slider">
+            <img
+              src="./assets/img/explore-slider/before.jpg"
+              alt=""
+              width="720"
+              height="700"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="video" class="video">
+        <div class="section_wrapper">
+          <div class="video_header">
+            <h2>Video journey</h2>
+            <p>
+              Enter and visit one of the most famous museums in the world and
+              enjoy masterpieces such as Mona Lisa or Hammurabi's Code
+            </p>
+          </div>
+          <div class="video_wrapper">
+            <div class="video-player">
+              <img src="./assets/img/player_dummy.jpg" alt="player_dummy" />
+            </div>
+
+            <div class="playlist_wrapper">
+              <div class="playlist_items">
+                <div class="playlist_item">
+                  <img src="./assets/img/video_dummy1.jpg" alt="video_dummy1" />
+                </div>
+                <div class="playlist_item">
+                  <img src="./assets/img/video_dummy2.jpg" alt="video_dummy2" />
+                </div>
+                <div class="playlist_item">
+                  <img src="./assets/img/video_dummy3.jpg" alt="video_dummy3" />
+                </div>
+              </div>
+              <div class="playlist_pagination">
+                <svg
+                  width="10"
+                  height="12"
+                  viewBox="0 0 10 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.4777 0.219168C5.87773 0.564178 5.94259 1.19347 5.62256 1.62473L2.37578 6.00004L5.62256 10.3753C5.94259 10.8066 5.87773 11.4359 5.4777 11.7809C5.07766 12.1259 4.49394 12.056 4.17391 11.6247L0 6.00004L4.17391 0.375342C4.49394 -0.0559202 5.07766 -0.125842 5.4777 0.219168ZM9.65184 0.219168C10.0519 0.564178 10.1167 1.19347 9.7967 1.62473L6.54992 6.00004L9.7967 10.3753C10.1167 10.8066 10.0519 11.4359 9.65184 11.7809C9.25181 12.1259 8.66808 12.056 8.34806 11.6247L4.17414 6.00004L8.34806 0.375342C8.66808 -0.0559202 9.25181 -0.125842 9.65184 0.219168Z"
+                    fill="currentColor"
+                  />
+                </svg>
+
+                <div class="pagination_item active"></div>
+                <div class="pagination_item"></div>
+                <div class="pagination_item"></div>
+                <div class="pagination_item"></div>
+                <div class="pagination_item"></div>
+                <svg
+                  width="10"
+                  height="12"
+                  viewBox="0 0 10 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.4777 0.219168C5.87773 0.564178 5.94259 1.19347 5.62256 1.62473L2.37578 6.00004L5.62256 10.3753C5.94259 10.8066 5.87773 11.4359 5.4777 11.7809C5.07766 12.1259 4.49394 12.056 4.17391 11.6247L0 6.00004L4.17391 0.375342C4.49394 -0.0559202 5.07766 -0.125842 5.4777 0.219168ZM9.65184 0.219168C10.0519 0.564178 10.1167 1.19347 9.7967 1.62473L6.54992 6.00004L9.7967 10.3753C10.1167 10.8066 10.0519 11.4359 9.65184 11.7809C9.25181 12.1259 8.66808 12.056 8.34806 11.6247L4.17414 6.00004L8.34806 0.375342C8.66808 -0.0559202 9.25181 -0.125842 9.65184 0.219168Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="gallery">
+        <div class="section_wrapper">
+          <h2>Art Gallery</h2>
+          <div class="gallery_wrapper">
+            <div class="column">
+              <img src="./assets/img/galery/galery2.jpg" alt="Artwork 2" />
+              <img src="./assets/img/galery/galery9.jpg" alt="Artwork 9" />
+              <img src="./assets/img/galery/galery4.jpg" alt="Artwork 4" />
+              <img src="./assets/img/galery/galery6.jpg" alt="Artwork 6" />
+            </div>
+            <div class="column">
+              <img src="./assets/img/galery/galery1.jpg" alt="Artwork 1" />
+              <img src="./assets/img/galery/galery8.jpg" alt="Artwork 8" />
+              <img src="./assets/img/galery/galery3.jpg" alt="Artwork 3" />
+              <img src="./assets/img/galery/galery5.jpg" alt="Artwork 5" />
+            </div>
+            <div class="column">
+              <img src="./assets/img/galery/galery7.jpg" alt="Artwork 7" />
+              <img src="./assets/img/galery/galery10.jpg" alt="Artwork 10" />
+              <img src="./assets/img/galery/galery15.jpg" alt="Artwork 15" />
+              <img src="./assets/img/galery/galery12.jpg" alt="Artwork 12" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tickets" class="tickets">
+        <div class="section_wrapper">
+          <h2>BUY TICKETS</h2>
+          <div class="tickets_wrapper">
+            <img src="./assets/img/tickets/tickets.jpg" alt="" />
+            <div class="column">
+              <h4>Ticket Type</h4>
+              <div class="ticket-options">
+                <div class="ticket-option">
+                  <input
+                    type="radio"
+                    id="permanent"
+                    name="ticket-type"
+                    value="permanent"
+                    checked
+                  />
+                  <label for="permanent">Permanent exhibition</label>
+                </div>
+                <div class="ticket-option">
+                  <input
+                    type="radio"
+                    id="temporary"
+                    name="ticket-type"
+                    value="temporary"
+                  />
+                  <label for="temporary">Temporary exhibition</label>
+                </div>
+                <div class="ticket-option">
+                  <input
+                    type="radio"
+                    id="combined"
+                    name="ticket-type"
+                    value="combined"
+                  />
+                  <label for="combined">Combined Admission</label>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <h4>Amount</h4>
+              <p>Basic 18+</p>
+              <div class="number-input">
+                <button class="decrement">–</button>
+                <input
+                  class="quantity"
+                  min="0"
+                  name="quantity"
+                  value="1"
+                  type="number"
+                />
+                <button class="increment">+</button>
+              </div>
+              <p>Senior 65+</p>
+              <div class="number-input">
+                <button class="decrement">–</button>
+                <input
+                  class="quantity"
+                  min="0"
+                  name="quantity"
+                  value="1"
+                  type="number"
+                />
+                <button class="increment">+</button>
+              </div>
+              <p>Total € <span>220</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="parallax"></section>
+      <section class="contacts">
+        <div class="section_wrapper"><h2>Contacts</h2></div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="section_wrapper">footer</div>
+    </footer>
   </body>
 </html>

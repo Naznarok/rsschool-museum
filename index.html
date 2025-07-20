@@ -221,9 +221,9 @@
             </p>
           </div>
           <div class="video_wrapper">
-            <div class="video-player">
-              <img src="./assets/img/player_dummy.jpg" alt="player_dummy" />
-            </div>
+  
+              <img src="./assets/img/player_dummy.jpg" alt="player_dummy" width="1440" height="735"/>
+ 
 
             <div class="playlist_wrapper">
               <div class="playlist_items">
@@ -340,33 +340,38 @@
                 </div>
               </div>
             </div>
-            <div class="column">
+            <div class="column amount">
               <h4>Amount</h4>
-              <p>Basic 18+</p>
-              <div class="number-input">
-                <button class="decrement">–</button>
-                <input
-                  class="quantity"
-                  min="0"
-                  name="quantity"
-                  value="1"
-                  type="number"
-                />
-                <button class="increment">+</button>
+              <div class="input_wrapper">
+                <p>Basic 18+</p>
+                <div class="number-input">
+                  <button class="decrement">–</button>
+                  <input
+                    class="quantity"
+                    min="0"
+                    name="quantity"
+                    value="1"
+                    type="number"
+                  />
+                  <button class="increment">+</button>
+                </div>
               </div>
-              <p>Senior 65+</p>
-              <div class="number-input">
-                <button class="decrement">–</button>
-                <input
-                  class="quantity"
-                  min="0"
-                  name="quantity"
-                  value="1"
-                  type="number"
-                />
-                <button class="increment">+</button>
+              <div class="input_wrapper">
+                <p>Senior 65+</p>
+                <div class="number-input">
+                  <button class="decrement">–</button>
+                  <input
+                    class="quantity"
+                    min="0"
+                    name="quantity"
+                    value="1"
+                    type="number"
+                  />
+                  <button class="increment">+</button>
+                </div>
               </div>
-              <p>Total € <span>220</span></p>
+              <p class="total">Total € <span>220</span></p>
+              <button>Buy Now</button>
             </div>
           </div>
         </div>

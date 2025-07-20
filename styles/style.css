@@ -68,7 +68,6 @@ h3 {
 
 .visiting,
 .explore,
-.gallery,
 .video,
 .tickets,
 .contacts {
@@ -415,17 +414,11 @@ line-height: 26px;
   transform: rotate(180deg);
 }
 
-.video-player {
-  width: 100%;
-  position: relative;
-  margin: 0 auto;
-  background: #000;
-}
-
 /* Art gallery Section */
 .gallery h2 {
   border: 0;
   color: #ffffff;
+  padding: 0;
 }
 
 .section_wrapper {
@@ -436,25 +429,26 @@ line-height: 26px;
 /* Gallery Section */
 .gallery {
   position: relative;
+  padding: 75px 0 0 0;
 }
 
 .gallery .section_wrapper {
-  max-height: 2000px;
   overflow: hidden;
   position: relative;
 }
 
 .gallery_wrapper {
+  height: 1960px;
   display: flex;
-  gap: 16px;
-  padding: 20px;
+  margin-top: 75px;
+  gap: 36px;
   position: relative;
 }
 
 .gallery_wrapper::after {
   content: "";
   position: absolute;
-  bottom: 360px;
+  bottom: 0px;
   left: 0;
   right: 0;
   height: 360px;
@@ -474,7 +468,12 @@ line-height: 26px;
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
+}
+
+.gallery_wrapper .column:first-child,
+.gallery_wrapper .column:last-child {
+  margin-top: 50px;
 }
 
 .gallery_wrapper .column img {
@@ -521,11 +520,41 @@ line-height: 26px;
   flex-direction: column;
   flex-grow: 1;
 }
+
+.tickets_wrapper .column.amount {
+  align-items: flex-end;
+}
+.tickets_wrapper .column .total {
+  margin-top: 50px;
+}
+.tickets_wrapper .column > button {
+  margin-top: 52px;
+  width: 175px;
+  height: 50px;
+  border: 0;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
 .ticket-options {
-  margin-top: 75px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 .ticket-option {
-  margin: 12px 0;
   display: flex;
   align-items: center;
 }
@@ -538,14 +567,35 @@ line-height: 26px;
 }
 
 .ticket-option label {
-  font-size: 1em;
-  color: #333;
-  cursor: pointer;
-  text-align: center; /* Center the label text */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
 }
 
 /**/
+
+.input_wrapper:first-of-type {
+  margin-top: 25px;
+}
+
+.input_wrapper {
+  margin-top: 10px;
+}
+
+.input_wrapper p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+}
+
 .number-input {
+  margin-top: 15px;
   display: inline-flex;
   align-items: center;
   border: 3px solid #000000;

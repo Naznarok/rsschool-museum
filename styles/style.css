@@ -517,7 +517,6 @@ line-height: 26px;
 }
 
 .tickets_wrapper .column {
-
   display: flex;
   flex-direction: column;
   flex-grow: 1;

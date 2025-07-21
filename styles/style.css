@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -115,20 +118,24 @@ line-height: 26px;
   color: #ffffff;
 }
 .header_nav ul li a,
-.footer_nav ul li a {
+.footer_nav ul li a,
+.footer_bottom a {
   color: #ffffff;
   text-decoration: none;
 }
 .header_nav ul li a:visited,
-.footer_nav ul li a:visited {
+.footer_nav ul li a:visited,
+.footer_bottom a:visited {
   color: #ffffff;
 }
 .header_nav ul li a:hover,
-.footer_nav ul li a:hover {
+.footer_nav ul li a:hover,
+.footer_bottom a:hover {
   color: #9d8665;
 }
 .header_nav ul li a:active,
-.footer_nav ul li a:active {
+.footer_nav ul li a:active,
+.footer_bottom a:active {
   color: #7e6c51;
 }
 .welcome .section_wrapper {
@@ -691,6 +698,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .contacts_wrapper h4 {
+  max-width: 227px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -714,12 +722,17 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   color: #000000;
 }
+.contacts_wrapper a {
+  text-decoration: none;
+  color: #000000;
+}
 /* Footer */
 .footer_top,
 .footer_bottom {
   margin: 0 auto;
   max-width: 1440px;
 }
+
 .footer_top {
   display: flex;
   padding: 75px 0 50px 0;
@@ -795,4 +808,14 @@ input[type="number"]::-webkit-outer-spin-button {
   outline: 1px solid #666666;
   outline-offset: -1px;
   border-radius: 50px;
+}
+.social_item a {
+  display: flex;
+  color: #ffffff;
+}
+.social_item:hover {
+  outline: 1px solid #9d8665;
+}
+.social_item:hover svg {
+  color: #9d8665;
 }

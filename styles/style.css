@@ -282,6 +282,7 @@ line-height: 26px;
 .visiting_item {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
 .visiting_item h3 {
   margin: 25px 0 10px 0;
@@ -297,6 +298,12 @@ line-height: 26px;
   width: 300px;
   height: 2px;
   background-color: #710707;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+.visiting_item:hover .underline {
+  width: 100%;
 }
 
 .item_subtitle {

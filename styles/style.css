@@ -334,6 +334,9 @@ line-height: 26px;
   display: flex;
   justify-content: space-between;
 }
+.explore img {
+  display: block;
+}
 .explore_text {
   width: 660px;
 }

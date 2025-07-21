@@ -305,6 +305,9 @@ line-height: 26px;
 .visiting_item:hover .underline {
   width: 100%;
 }
+.visiting_item:hover img {
+  opacity: 50%;
+}
 
 .item_subtitle {
   font-family: "Roboto";

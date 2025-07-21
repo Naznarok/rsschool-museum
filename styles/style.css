@@ -114,17 +114,21 @@ line-height: 26px;
   letter-spacing: 2px;
   color: #ffffff;
 }
-.header_nav ul li a {
+.header_nav ul li a,
+.footer_nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
-.header_nav ul li a:visited {
+.header_nav ul li a:visited,
+.footer_nav ul li a:visited {
   color: #ffffff;
 }
-.header_nav ul li a:hover {
+.header_nav ul li a:hover,
+.footer_nav ul li a:hover {
   color: #9d8665;
 }
-.header_nav ul li a:active {
+.header_nav ul li a:active,
+.footer_nav ul li a:active {
   color: #7e6c51;
 }
 .welcome .section_wrapper {
@@ -403,12 +407,17 @@ line-height: 26px;
   cursor: pointer;
   border-radius: 12px;
 }
-
+.playlist_pagination .pagination_item:hover {
+  background: #710707;
+}
 .playlist_pagination .active {
   background-color: #333333 !important;
 }
 .playlist_pagination svg {
   color: #999999;
+}
+.playlist_pagination svg:hover {
+  color: #710707;
 }
 .playlist_pagination svg:last-of-type {
   transform: rotate(180deg);
@@ -524,9 +533,7 @@ line-height: 26px;
 .tickets_wrapper .column.amount {
   align-items: flex-end;
 }
-.tickets_wrapper .column .total {
-  margin-top: 50px;
-}
+
 .tickets_wrapper .column > button {
   margin-top: 52px;
   width: 175px;
@@ -536,7 +543,7 @@ line-height: 26px;
   display: flex;
   justify-content: center;
   text-align: center;
-
+  border-radius: 2px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -548,6 +555,12 @@ line-height: 26px;
   letter-spacing: 2px;
   color: #ffffff;
 }
+
+.tickets_wrapper .column > button:hover {
+  color: #000000;
+  background-color: #9d8665;
+}
+
 .ticket-options {
   margin-top: 50px;
   display: flex;
@@ -575,17 +588,20 @@ line-height: 26px;
   color: #000000;
 }
 
-/**/
+/* Ticket - Amount */
+.tickets_wrapper .column .total {
+  margin-top: 50px;
+}
 
-.input_wrapper:first-of-type {
+.tickets_wrapper .input_wrapper:first-of-type {
   margin-top: 25px;
 }
 
-.input_wrapper {
+.tickets_wrapper .input_wrapper {
   margin-top: 10px;
 }
 
-.input_wrapper p {
+.tickets_wrapper .input_wrapper p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -594,17 +610,17 @@ line-height: 26px;
   color: #000000;
 }
 
-.number-input {
+.tickets_wrapper .number-input {
   margin-top: 15px;
   display: inline-flex;
   align-items: center;
   border: 3px solid #000000;
   overflow: hidden;
   padding: 6px;
-  width: 150px;
+  width: 132px;
 }
 
-.number-input input {
+.tickets_wrapper .number-input input {
   width: 100%;
   padding: 0;
   text-align: center;
@@ -651,4 +667,133 @@ input[type="number"]::-webkit-outer-spin-button {
   line-height: 38px;
   text-align: center;
   color: #000000;
+}
+
+.amount .total {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  /* identical to box height */
+  letter-spacing: 1.65px;
+  color: #000000;
+}
+
+/* Contacts Section */
+.contacts_wrapper {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts_wrapper .column {
+  max-width: 282px;
+}
+
+.contacts_wrapper h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.contacts_wrapper ul {
+  margin: 50px 0 0 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  color: #000000;
+}
+/* Footer */
+.footer_top,
+.footer_bottom {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.footer_top {
+  display: flex;
+  padding: 75px 0 50px 0;
+}
+
+.divider {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border-top: 3px solid #666666;
+}
+
+.footer_top img {
+  margin-top: 5px;
+}
+
+.footer_bottom ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 50px 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.footer_nav {
+  display: flex;
+  width: 363px;
+  height: 128px;
+  margin: 12px 0 0 145px;
+}
+
+.footer_nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  column-gap: 150px;
+  list-style: none;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.footer_nav ul li {
+  width: 106px;
+}
+
+.footer_social {
+  margin-bottom: 5px;
+  height: 48px;
+  margin-left: auto;
+  display: flex;
+  align-self: flex-end;
+  gap: 25px;
+}
+
+.social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  outline: 1px solid #666666;
+  outline-offset: -1px;
+  border-radius: 50px;
 }

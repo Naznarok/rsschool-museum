@@ -83,7 +83,67 @@ h3 {
   padding: 75px 0 75px 0;
 }
 
-.header .section_wrapper {
+/* Header Container */
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 59px 0 58px;
+}
+
+/* Logo Styles */
+.header__logo {
+  display: block;
+}
+
+.header__logo-image {
+  width: auto;
+  height: auto;
+}
+
+/* Navigation Styles */
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 55px;
+  list-style: none;
+}
+
+.header__nav-item {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+}
+
+/* Link States */
+.header__nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header__nav-link:visited {
+  color: #ffffff;
+}
+
+.header__nav-link:hover {
+  color: #9d8665;
+}
+
+.header__nav-link:active {
+  color: #7e6c51;
+}
+
+/* .header .section_wrapper {
   display: flex;
   justify-content: space-between;
   padding: 59px 0 58px 0;
@@ -127,7 +187,8 @@ h3 {
 .footer_nav ul li a:active,
 .footer_bottom a:active {
   color: #7e6c51;
-}
+} */
+
 .welcome .section_wrapper {
   border: 1px dashed green;
   position: relative;
@@ -285,7 +346,8 @@ h3 {
   font-family: "Roboto", sans-serif;
 }
 .visiting_wrapper {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: repeat(3, 1fr);
   gap: 75px 60px;
   margin-top: 75px;

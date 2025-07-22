@@ -92,7 +92,7 @@ h3 {
 
 /* Logo Styles */
 .header__logo {
-  display: block;
+  display: flex;
 }
 
 .header__logo-image {

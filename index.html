@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container section_wrapper">
+      <div class="header__container container">
         <a href="/" class="header__logo">
           <img
             src="./assets/img/Logo.svg"
@@ -49,40 +49,44 @@
     </header>
     <main>
       <section class="welcome">
-        <div class="section_wrapper">
-          <div class="welcome_text">
-            <h1>
+        <div class="welcome__container container">
+          <div class="welcome__content">
+            <h1 class="welcome__heading">
               Welcome<br />
               to the Louvre
             </h1>
-            <p>From the castle to the museum</p>
-            <button class="welcome_button">Discover the Louvre</button>
+            <p class="welcome__description">From the castle to the museum</p>
+            <button class="welcome__button">Discover the Louvre</button>
           </div>
-          <div class="welcome_gallery">
-            <img src="./assets/img/welcome-slider/1.jpg" alt="" />
+          <div class="welcome__gallery">
+            <img
+              src="./assets/img/welcome-slider/1.jpg"
+              alt="Louvre Museum exhibition"
+              class="welcome__gallery-image"
+            />
           </div>
-          <div class="gallery_pagination">
-            <div class="pagination_counter">
-              <span>01</span>
-              <span>|</span>
-              <span>05</span>
+          <div class="welcome__controls">
+            <div class="welcome__counter">
+              <span class="welcome__counter-item">01</span>
+              <span class="welcome__counter-item">|</span>
+              <span class="welcome__counter-item">05</span>
             </div>
-            <ul class="pagination_items">
-              <li>
-                <button class="pagination_item active"></button>
-              </li>
-              <li><button class="pagination_item"></button></li>
-              <li><button class="pagination_item"></button></li>
-              <li><button class="pagination_item"></button></li>
-              <li><button class="pagination_item"></button></li>
+            <ul class="welcome__indicator">
+              <li
+                class="welcome__indicator-item welcome__indicator-item--active"
+              ></li>
+              <li class="welcome__indicator-item"></li>
+              <li class="welcome__indicator-item"></li>
+              <li class="welcome__indicator-item"></li>
+              <li class="welcome__indicator-item"></li>
             </ul>
-            <div class="pagination_buttons">
-              <button class="arrow left">
+            <div class="welcome__navigation">
+              <button class="welcome__nav-button welcome__nav-button--prev">
                 <svg
+                  class="welcome__nav-icon"
                   width="30"
                   height="8"
                   viewBox="0 0 30 8"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M5.72254 8C3.90173 6.31339 1.99422 5.08262 0 4.30769V3.69231C1.99422 2.89459 3.90173 1.66382 5.72254 0H7.23988C6.37283 1.4359 5.53468 2.52991 4.72543 3.28205H30V4.71795H4.72543C5.53468 5.47009 6.37283 6.5641 7.23988 8H5.72254Z"
@@ -90,12 +94,12 @@
                   />
                 </svg>
               </button>
-              <button class="arrow right">
+              <button class="welcome__nav-button welcome__nav-button--next">
                 <svg
+                  class="welcome__nav-icon"
                   width="30"
                   height="8"
                   viewBox="0 0 30 8"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M5.72254 8C3.90173 6.31339 1.99422 5.08262 0 4.30769V3.69231C1.99422 2.89459 3.90173 1.66382 5.72254 0H7.23988C6.37283 1.4359 5.53468 2.52991 4.72543 3.28205H30V4.71795H4.72543C5.53468 5.47009 6.37283 6.5641 7.23988 8H5.72254Z"
@@ -108,7 +112,7 @@
         </div>
       </section>
       <section id="visiting" class="visiting">
-        <div class="section_wrapper">
+        <div class="container">
           <h2>Virtual tour</h2>
           <div class="visiting_wrapper">
             <a href="#" class="visiting_item">
@@ -204,7 +208,7 @@
         </div>
       </section>
       <section id="explore" class="explore">
-        <div class="section_wrapper">
+        <div class="container">
           <div class="explore_text">
             <h2>Picture explore</h2>
             <p>
@@ -232,7 +236,7 @@
         </div>
       </section>
       <section id="video" class="video">
-        <div class="section_wrapper">
+        <div class="container">
           <div class="video_header">
             <h2>Video journey</h2>
             <p>
@@ -301,7 +305,7 @@
         </div>
       </section>
       <section id="gallery" class="gallery">
-        <div class="section_wrapper">
+        <div class="container">
           <h2>Art Gallery</h2>
           <div class="gallery_wrapper">
             <div class="column">
@@ -326,7 +330,7 @@
         </div>
       </section>
       <section id="tickets" class="tickets">
-        <div class="section_wrapper">
+        <div class="container">
           <h2>BUY TICKETS</h2>
           <div class="tickets_wrapper">
             <img src="./assets/img/tickets/tickets.jpg" alt="" />
@@ -401,7 +405,7 @@
       </section>
       <div class="parallax"></div>
       <section id="contacts" class="contacts">
-        <div class="section_wrapper">
+        <div class="container">
           <h2>Contacts</h2>
           <div class="contacts_wrapper">
             <div class="column">

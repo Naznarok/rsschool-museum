@@ -23,7 +23,14 @@
             class="header__logo-image"
           />
         </a>
-        <nav class="header__nav">
+        <div class="header__nav-button">
+          <a href="#" id="headerButton">
+            <svg class="header__nav-icon" id="headerIcon">
+              <use xlink:href="#hb-default"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="header__nav" id="headerNav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
               <a href="#visiting" class="header__nav-link">Visiting</a>
@@ -50,7 +57,7 @@
     <main>
       <section id="welcome" class="welcome">
         <div class="welcome__container container">
-          <div class="welcome__content">
+          <div class="welcome__content" id="welcomeContent">
             <h1 class="welcome__heading">
               Welcome<br />
               to the Louvre
@@ -116,12 +123,7 @@
           <h2>Virtual tour</h2>
           <div class="visiting_wrapper">
             <a href="#" class="visiting_item">
-              <img
-                src="./assets/img/tour/1.jpg"
-                alt=""
-                width="440"
-                height="285"
-              />
+              <img src="./assets/img/tour/1.jpg" alt="" />
               <h3>Royal Palace</h3>
               <ul class="item_text">
                 <li class="underline"></li>
@@ -131,12 +133,7 @@
             </a>
 
             <a href="#" class="visiting_item">
-              <img
-                src="./assets/img/tour/2.jpg"
-                alt=""
-                width="440"
-                height="285"
-              />
+              <img src="./assets/img/tour/2.jpg" alt="" />
               <h3>Denon Wing</h3>
               <ul class="item_text">
                 <li class="underline"></li>
@@ -146,12 +143,7 @@
             </a>
 
             <a href="#" class="visiting_item">
-              <img
-                src="./assets/img/tour/3.jpg"
-                alt=""
-                width="440"
-                height="285"
-              />
+              <img src="./assets/img/tour/3.jpg" alt="" />
               <h3>Colonnade Perrault</h3>
               <ul class="item_text">
                 <li class="underline"></li>
@@ -161,12 +153,7 @@
             </a>
 
             <a href="#" class="visiting_item">
-              <img
-                src="./assets/img/tour/4.jpg"
-                alt=""
-                width="440"
-                height="285"
-              />
+              <img src="./assets/img/tour/4.jpg" alt="" />
               <h3>Greek Hall</h3>
               <ul class="item_text">
                 <li class="underline"></li>
@@ -176,12 +163,7 @@
             </a>
 
             <a href="#" class="visiting_item">
-              <img
-                src="./assets/img/tour/5.jpg"
-                alt=""
-                width="440"
-                height="285"
-              />
+              <img src="./assets/img/tour/5.jpg" alt="" />
               <h3>Mona Lisa</h3>
               <ul class="item_text">
                 <li class="underline"></li>
@@ -191,12 +173,7 @@
             </a>
 
             <a href="#" class="visiting_item">
-              <img
-                src="./assets/img/tour/6.jpg"
-                alt=""
-                width="440"
-                height="285"
-              />
+              <img src="./assets/img/tour/6.jpg" alt="" />
               <h3>Night Palace</h3>
               <ul class="item_text">
                 <li class="underline"></li>
@@ -245,12 +222,7 @@
             </p>
           </div>
           <div class="video_wrapper">
-            <img
-              src="./assets/img/player_dummy.jpg"
-              alt="player_dummy"
-              width="1440"
-              height="735"
-            />
+            <img src="./assets/img/player_dummy.jpg" alt="player_dummy" />
 
             <div class="playlist_wrapper">
               <div class="playlist_items">
@@ -334,7 +306,7 @@
           <h2>BUY TICKETS</h2>
           <div class="tickets_wrapper">
             <img src="./assets/img/tickets/tickets.jpg" alt="" />
-            <div class="column">
+            <div class="column type">
               <h4>Ticket Type</h4>
               <div class="ticket-options">
                 <div class="ticket-option">
@@ -420,12 +392,8 @@
                 </li>
               </ul>
             </div>
-            <img
-              src="./assets/img/contacts_map.jpg"
-              alt="Contacts map"
-              width="960"
-              height="620"
-            />
+
+            <img src="./assets/img/contacts_map.jpg" alt="Contacts map" />
           </div>
         </div>
       </section>
@@ -435,12 +403,12 @@
         <img src="./assets/img/Logo.svg" alt="Logo" width="195" height="34" />
         <nav class="footer_nav">
           <ul>
-            <li><a href="#visiting">Visiting</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#explore">Explore</a></li>
-            <li><a href="#tickets">Tickets</a></li>
-            <li><a href="#video">Video</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li><a class="footer__nav-link" href="#visiting">Visiting</a></li>
+            <li><a class="footer__nav-link" href="#gallery">Gallery</a></li>
+            <li><a class="footer__nav-link" href="#explore">Explore</a></li>
+            <li><a class="footer__nav-link" href="#tickets">Tickets</a></li>
+            <li><a class="footer__nav-link" href="#video">Video</a></li>
+            <li><a class="footer__nav-link" href="#contacts">Contacts</a></li>
           </ul>
         </nav>
         <ul class="footer_social">
@@ -531,13 +499,55 @@
         <ul>
           <li>© 2021</li>
           <li>
-            <a href="https://rs.school/" target="_blank"
+            <a
+              class="footer__nav-link"
+              href="https://rs.school/"
+              target="_blank"
               >The Rolling Scopes School</a
             >
           </li>
-          <li><a href="https://github.com/naznarok">Naznarok</a></li>
+          <li>
+            <a class="footer__nav-link" href="https://github.com/naznarok"
+              >Naznarok</a
+            >
+          </li>
         </ul>
       </div>
     </footer>
+
+    <svg width="0" height="0" class="hidden">
+      <symbol
+
+        xmlns="http://www.w3.org/2000/svg"
+        id="hb-default"
+        viewBox="0 0 32 18"
+        fill="currentColor"
+      >
+        <rect width="32" height="2" />
+        <rect y="8" width="32" height="2" />
+        <rect y="16" width="32" height="2" />
+      </symbol>
+
+      <symbol
+        width="25"
+        height="25"
+        viewBox="0 0 25 25"
+        fill="currentColor"
+        id="hb-close"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          width="33.2612"
+          height="2.07882"
+          transform="matrix(0.7068 0.707413 -0.7068 0.707413 1.47046 0)"
+        />
+        <rect
+          width="33.2612"
+          height="2.07883"
+          transform="matrix(0.707413 -0.706801 0.707413 0.706801 0 23.5093)"
+        />
+      </symbol>
+    </svg>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

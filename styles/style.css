@@ -105,7 +105,9 @@ h3 {
   display: flex;
   align-items: center;
 }
-
+.header__nav-button {
+  display: none;
+}
 .header__nav-list {
   margin: 0;
   padding: 0;
@@ -115,6 +117,7 @@ h3 {
 }
 
 .header__nav-item {
+  display: flex;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 100;
@@ -124,21 +127,25 @@ h3 {
 }
 
 /* Link States */
-.header__nav-link {
+.header__nav-link,
+.footer__nav-link {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.header__nav-link:visited {
+.header__nav-link:visited,
+.footer__nav-link:visited {
   color: #ffffff;
 }
 
-.header__nav-link:hover {
+.header__nav-link:hover,
+.footer__nav-link:hover {
   color: #9d8665;
 }
 
-.header__nav-link:active {
+.header__nav-link:active,
+.footer__nav-link:active {
   color: #7e6c51;
 }
 
@@ -279,7 +286,7 @@ h3 {
 .welcome__indicator-item {
   display: flex;
   align-items: center;
-    width: 16px;
+  width: 16px;
   height: 16px;
   background-color: white;
   border: none;
@@ -896,7 +903,7 @@ input[type="number"]::-webkit-outer-spin-button {
   .container {
     margin: 0 20px;
     max-width: 984px;
-    border: 1px dashed blue;
+    /* border: 1px dashed blue; */
   }
 
   .visiting,
@@ -906,90 +913,212 @@ input[type="number"]::-webkit-outer-spin-button {
   .contacts {
     padding: 60px 0 60px 0;
   }
-
-  /* Welcome Section */
-  .welcome .container {
+  .header__container {
     position: relative;
+  }
+
+  .header__nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__nav-button svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header__nav-button a {
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+
+  .header__nav-button a:hover {
+    color: #9d8665;
+  }
+  .header__nav-button a:active {
+    color: #7e6c51;
+  }
+
+  .header__nav {
+    display: none;
+    position: absolute;
+    top: 200px;
+    z-index: 99;
+    width: 297px;
+  }
+
+  .active {
+    display: unset;
+  }
+
+  .disabled {
+    display: none;
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+    gap: 25px;
+    width: 122px;
     height: 585px;
   }
-
-  .welcome .welcome_gallery img {
-    width: 700px;
-    height: 525px;
-    object-fit: cover;
-    object-position: center;
+  .header__nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-
-  .welcome .welcome_text {
-    top: 50px;
-    max-width: 445px;
+  .header__nav-item::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url("../assets/img/arrow_nav.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
-
-  .welcome .welcome_text h1 {
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 90px;
-    letter-spacing: 5px;
-  }
-
-  .welcome .welcome_text p {
-    margin-bottom: 50px;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 2px;
-  }
-
-  .welcome .welcome_button {
-    width: 300px;
-    height: 60px;
-    margin-top: 50px;
+  .header__nav-link {
     font-weight: 300;
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 2px;
   }
 
-  .welcome .gallery_pagination {
-    width: 700px;
-    height: 120px;
-    right: 0;
-    top: 465px;
-    gap: 45px;
+  .welcome__container {
+    position: relative;
+    height: 585px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* Content block */
+  .welcome__content {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    max-width: 445px;
+    z-index: 2;
   }
 
-  .welcome .pagination_counter span {
+  .welcome__heading {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 40px;
-  }
-  .welcome .pagination_item {
-    width: 12px;
-    height: 12px;
-  }
-  .welcome .pagination_buttons {
-    margin-left: 0;
+    font-size: 50px;
+    line-height: 90px;
   }
 
-  .tickets_wrapper .column:first-of-type {
-    display: none;
+  .welcome__description {
+    margin-bottom: 50px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #ffffff;
   }
-  .tickets_wrapper .column {
-    margin-right: 29px;
+
+  .welcome__button {
+    width: 300px;
+    height: 60px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 2px;
   }
-  .tickets_wrapper .input_wrapper {
+
+  /* Gallery */
+  .welcome__gallery {
+    position: relative;
+    width: 700px;
+    height: 525px;
+  }
+
+  .welcome__gallery::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.5) 16.19%,
+      rgba(0, 0, 0, 0) 30.73%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .welcome__gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .welcome__controls {
+    width: 700px;
+  }
+
+  .visiting_wrapper {
+    /* border: 1px dashed red; */
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 108px;
+    margin-top: 75px;
+    justify-content: center;
+    align-items: start;
+  }
+  .visiting_item {
+    /* border: 1px dashed green; */
+    width: 330px;
+  }
+
+  .explore .container {
+    flex-wrap: wrap;
+  }
+  .explore_text {
     width: 100%;
   }
-  .tickets_wrapper .number-input {
-    width: initial;
+  .explore_slider {
+    margin: 62px auto 0 auto;
   }
-  .tickets_wrapper .column.amount {
-    align-items: initial;
+  .video_header p {
+    display: none;
   }
-
-  .tickets_wrapper .total {
+  .playlist_item {
     display: flex;
-    justify-content: space-between;
+    width: 300px;
+    height: 170px;
+  }
+  .gallery_wrapper {
+    height: 1460px;
+  }
+  .tickets .type {
+    display: none;
+  }
+  .tickets .amount {
+    margin-right: 29px;
+  }
+  .contacts_wrapper .column ul {
+    width: 274px;
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .contacts_wrapper img {
+    width: 694px;
+  }
+  .footer_top,
+  .footer_bottom {
+    margin: 0 20px;
+  }
+  .footer_nav {
+    margin: 5px 0 0 45px;
+  }
+  .footer_nav ul {
+    column-gap: 100px;
   }
 }
 

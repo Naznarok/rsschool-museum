@@ -23,7 +23,20 @@ ul {
   padding: 0;
   /* border: 1px dashed green; */
 }
-
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #9d8665;
+}
+a:active {
+  color: #7e6c51;
+}
+a:visited {
+  color: #ffffff;
+}
 h1 {
   margin-bottom: 25px;
   font-family: "Forum";
@@ -131,23 +144,6 @@ h3 {
 .header__nav-link,
 .footer__nav-link {
   color: #ffffff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.header__nav-link:visited,
-.footer__nav-link:visited {
-  color: #ffffff;
-}
-
-.header__nav-link:hover,
-.footer__nav-link:hover {
-  color: #9d8665;
-}
-
-.header__nav-link:active,
-.footer__nav-link:active {
-  color: #7e6c51;
 }
 
 /* ===== WELCOME SECTION ===== */
@@ -402,7 +398,7 @@ h3 {
 /* Explore */
 .explore .container {
   display: flex;
-  gap:60px;
+  gap: 60px;
 }
 .explore img {
   display: block;
@@ -768,15 +764,16 @@ input[type="number"]::-webkit-outer-spin-button {
 /* Contacts Section */
 .contacts_wrapper {
   margin-top: 75px;
+  gap: 16px;
   display: flex;
   justify-content: space-between;
 }
 
-.contacts_wrapper .column {
-  max-width: 282px;
+.contacts_address {
+  min-width: 282px;
 }
 
-.contacts_wrapper h4 {
+.contacts h4 {
   max-width: 227px;
   font-family: "Roboto";
   font-style: normal;
@@ -786,7 +783,7 @@ input[type="number"]::-webkit-outer-spin-button {
   color: #000000;
 }
 
-.contacts_wrapper ul {
+.contacts_address ul {
   margin: 50px 0 0 0;
   list-style: none;
   display: flex;
@@ -801,10 +798,12 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   color: #000000;
 }
-.contacts_wrapper a {
-  text-decoration: none;
-  color: #000000;
+.contacts_map img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
+
 /* Footer */
 .footer_top,
 .footer_bottom {
@@ -1145,7 +1144,7 @@ input[type="number"]::-webkit-outer-spin-button {
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
-    line-height: 38px;
+    line-height: 35px;
   }
   .explore_text p:last-of-type {
     display: none;
@@ -1201,15 +1200,18 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .contacts_wrapper {
     margin-top: 60px;
+    gap: 16px;
   }
-  .contacts_wrapper h4 {
+  .contacts h4 {
     max-width: 185px;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
   }
-
-  .contacts_wrapper .column ul {
+  .contacts_address {
+    min-width: 274px;
+  }
+  .contacts_address ul {
     margin: 35px 0 0 0;
     gap: 15px;
     width: 274px;
@@ -1217,9 +1219,7 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 20px;
     line-height: 23px;
   }
-  .contacts_wrapper img {
-    width: 694px;
-  }
+
   .footer_top {
     padding: 60px 0 50px 0;
   }

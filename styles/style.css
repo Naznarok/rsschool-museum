@@ -402,7 +402,7 @@ h3 {
 /* Explore */
 .explore .container {
   display: flex;
-  justify-content: space-between;
+  gap:60px;
 }
 .explore img {
   display: block;
@@ -898,6 +898,11 @@ input[type="number"]::-webkit-outer-spin-button {
 .social_item:hover svg {
   color: #9d8665;
 }
+@media (max-width: 1440px) {
+  .container {
+    margin: 0 20px;
+  }
+}
 
 /* Screen size ≤ 1024px */
 @media (max-width: 1024px) {
@@ -1126,6 +1131,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .explore .container {
     flex-wrap: wrap;
+    gap: initial;
   }
   .explore_text p:first-of-type {
     margin-top: 60px;

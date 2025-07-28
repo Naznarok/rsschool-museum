@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  overflow: hidden;
   margin: 0;
   padding: 0;
   /* border: 1px dashed red; */
@@ -915,6 +916,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .header__container {
     position: relative;
+    padding: 49px 0 48px;
   }
 
   .header__nav-button {
@@ -988,6 +990,21 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 585px;
     display: flex;
     justify-content: flex-end;
+  }
+  .welcome__counter-item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .welcome__controls {
+    gap: 45px;
+  }
+  .welcome__navigation {
+    margin-left: 0;
+  }
+  .welcome__indicator-item {
+    width: 12px;
+    height: 12px;
   }
   /* Content block */
   .welcome__content {

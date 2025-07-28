@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 0;
   padding: 0;
   /* border: 1px dashed red; */
@@ -906,7 +906,27 @@ input[type="number"]::-webkit-outer-spin-button {
     max-width: 984px;
     /* border: 1px dashed blue; */
   }
-
+  h1 {
+  }
+  h2 {
+    font-family: "Forum";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    padding-bottom: 20px;
+  }
+  h3 {
+    font-family: "Forum";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: 3px;
+  }
+  .underline {
+    width: 150px;
+  }
   .visiting,
   .explore,
   .video,
@@ -1082,7 +1102,7 @@ input[type="number"]::-webkit-outer-spin-button {
     flex-wrap: wrap;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px 108px;
-    margin-top: 75px;
+    margin-top: 60px;
     justify-content: center;
     align-items: start;
   }
@@ -1090,7 +1110,13 @@ input[type="number"]::-webkit-outer-spin-button {
     /* border: 1px dashed green; */
     width: 330px;
   }
-
+  .item_subtitle {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 23px;
+  }
   .explore .container {
     flex-wrap: wrap;
   }
